@@ -9,7 +9,8 @@
   background-color: var(--card-background);
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 100%; /* Makes the card fluid on mobile */
+  max-width: 400px;
   padding: 40px;
   text-align: center;
   border: 1px solid var(--border-color);
