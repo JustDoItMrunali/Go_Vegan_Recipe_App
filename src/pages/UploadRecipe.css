@@ -1,0 +1,122 @@
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.form-card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-heading {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.form-group-vertical {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.dynamic-input-group {
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: none;
+  margin-top: 5px;
+}
+
+.file-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-label {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  font-size: 1em;
+  transition: all 0.2s;
+}
+
+.file-label:hover {
+  background-color: var(--border-color);
+}
+
+.file-name {
+  color: var(--text-color);
+  opacity: 0.7;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+#file-input {
+  display: none;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  filter: brightness(1.1);
+}

@@ -1,0 +1,119 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.auth-card {
+  background-color: var(--card-background);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.tab-container {
+  display: flex;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.social-login-separator {
+  color: var(--text-color);
+  font-size: 0.9em;
+  opacity: 0.7;
+  margin: 20px 0;
+  position: relative;
+}
+
+.social-login-separator::before,
+.social-login-separator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.social-login-separator::before {
+  left: 0;
+}
+
+.social-login-separator::after {
+  right: 0;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-link {
+  display: block;
+  margin-top: 15px;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+}
